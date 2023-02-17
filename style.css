@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* font */
+    --ff: "Karla", sans-serif;
+    --fs: 16px;
+    --fw400: 400;
+    --fw700: 700;
+
+    /* color */
+    --primary: hsl(218, 22%, 67%);
+    --secondary: hsl(71, 73%, 54%);
+    --altcolor: hsl(204, 43%, 93%);
+    --bgcolor: hsl(179, 62%, 43%);
+    --bgfaded: hsla(179, 62%, 43%, 0.6);
+}
+
+body {
+    font-family: var(--ff);
+    font-size: var(--fs);
+    line-height: 1.5;
+    background-color: var(--primary);
+    width: 50%;
+    margin: 80px auto auto auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.card {
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.top-section {
+    background-color: var(--altcolor);
+    padding: 30px;
+}
+
+.bottom-section {
+    display: flex;
+    flex-flow: row nowrap;
+    color: var(--altcolor);
+}
+
+.bottom-left-section {
+    width: 50%;
+    background-color: var(--bgcolor);
+    padding: 30px;
+    flex: 1 1 auto;
+}
+
+.bottom-right-section {
+    width: 50%;
+    background-color: var(--bgfaded);
+    padding: 30px;
+    flex: 1 1 auto;
+}
+
+.cyan {
+    color: var(--bgcolor);
+    margin-bottom: 15px;
+}
+
+.bright-yellow {
+    color: var(--secondary);
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--secondary);
+    color: var(--altcolor);
+    width: 75%;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: var(--fw700);
+}
+
+.bold {
+    font-weight: var(--fw700);
+    font-size: 2.6rem;
+}
+
+.faded {
+    color: rgb(111, 126, 148);
+    font-size: 1rem;
+    position: relative;
+    top: -7px;
+}
+
+.button:hover {
+    color: hsl(204, 43%, 93%, 0.8);
+    background-color: hsl(71, 73%, 54%, 0.8);
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.space {
+    padding-bottom: 15px;
+}
+
+.top-section > p {
+    color: var(--primary);
+    margin-top: 15px;
+}
