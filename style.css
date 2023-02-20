@@ -114,3 +114,25 @@ ul {
     color: var(--primary);
     margin-top: 15px;
 }
+
+/* when screen is less than 600px */
+@media screen and (max-width: 600px) {
+    body {
+        width: 70%;
+    }
+
+    .bottom-section {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .bottom-left-section,
+    .bottom-right-section {
+        width: 100%;
+    }
+
+    .button {
+        width: 70%;
+    }
+}
+
